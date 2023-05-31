@@ -215,24 +215,18 @@ section {
     padding: 6px 12px;
     border: 1px solid white;
     border-radius: 4px;
-}
-
-.siteCard {
-  display: inline-block;
-  padding: 10px 20px;
-  margin-left: 50px;
-  background-color: #ff5e00; /* Set the background color for the buttons */
-  color: white; /* Set the text color for the buttons */
-  border-radius: 4px;
-  text-decoration: none;
+    margin-left: 60px;
+    background-color: #ff5e00;
+    color: white;
+    text-decoration: none;
 }
 
 .siteCard:hover {
-  background-color: #b35400; /* Set the background color on hover */
+  background-color: #b35400;
 }
 
 .siteCard:focus {
-  outline: none; /* Remove the button outline on focus */
+  outline: none;
 }
   
 
