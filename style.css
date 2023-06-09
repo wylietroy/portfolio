@@ -1,0 +1,269 @@
+* {
+  margin: 0;
+  padding: 0 border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  background-color: black;
+  padding-left: 100px;
+}
+
+.navbar {
+    font-size: 30px;
+    padding-right: 30px;
+    color: white;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 20%;
+  border-left: 1px solid white;
+}
+
+nav {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  border-left: 1px solid white;
+}
+
+nav ul {
+  flex-direction: column;
+  list-style-type: none;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 0.9rem;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  font-size: 30px;
+}
+
+section {
+  min-height: 100vh;
+  padding-top: 60px;
+}
+
+.github img {
+    width: 50px;
+    height: 50px;
+}
+
+.linkedin img {
+  width: 50px;
+  height: 50px;
+}
+
+.resume img {
+    width: 50px;
+    height: 50px;
+}
+
+.github,
+.linkedin
+.resume {
+  display: inline;
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+/* About Me Section */
+
+#about {
+    margin-top: 50px;
+    color: white;
+}
+
+.abtitle {
+    font-size: 2.5rem;
+    margin: 60px;
+}
+
+.abname {
+    font-size: 3rem;
+    margin-top: 10px;
+    font-style: oblique;
+    font-weight: 600;
+}
+
+.abpara1 {
+    font-size: 1.8rem;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    width: 40%;
+}
+
+.abpara2 {
+    font-size: 1.2rem;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    width: 40%;
+}
+
+/* Projects Section */
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px; /* Adjust the gap value as per your preference */
+}
+
+.projectRow {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 20px; /* Adjust the gap value as per your preference */
+}
+
+.projectCard {
+  width: 400px; /* Adjust the width and gap values for the desired spacing */
+  background-color: #ffffff; /* Set the background color for the project card */
+  padding: 10px;
+  margin: 50px;
+  /* box-sizing: border-box; */
+  border-radius: 20px;
+}
+
+.projectCard img {
+  max-width: 100%; /* Ensure the image fits within the project card */
+  height: auto; /* Maintain the aspect ratio of the image */
+  border-radius: 10px;
+}
+
+.skillCard {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-right: 8px; /* Adjust the spacing between the skill cards */
+    border: 1px solid #ccc; /* Set the border style for the skill cards */
+    border-radius: 4px; /* Add rounded corners to the skill cards */
+    margin-bottom: 8px;
+    background-color: #ff4b2b;
+}
+
+.titleCard1 {
+    align-items: center;
+    margin-left: 140px;
+}
+
+.titleCard2 {
+    align-items: center;
+    margin-left: 140px;
+}
+
+.titleCard3 {
+    align-items: center;
+    margin-left: 115px;
+}
+
+.titleCard4 {
+    align-items: center;
+    margin-left: 70px;
+}
+
+.siteCard {
+    display: inline-block;
+    padding: 6px 12px;
+    border: 1px solid white;
+    border-radius: 4px;
+    margin-left: 60px;
+    background-color: #ff5e00;
+    color: white;
+    text-decoration: none;
+}
+
+.siteCard:hover {
+  background-color: #b35400;
+}
+
+.siteCard:focus {
+  outline: none;
+}
+  
+
+/* Contact Me Section */
+
+#contact {
+    color: rgb(0, 0, 0);
+    padding: 50px;
+    height: 100%;
+    /* margin-bottom: 100px; */
+    /* margin-top: 10px; */
+}
+
+.formContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 800px;
+    padding: 30px;
+    background-color: #f1f1f1;
+    border-radius: 20px;
+    margin-bottom: 100px;
+    margin-top: 1000px;
+}
+  
+form {
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+}
+  
+h4 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+  
+input,
+textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #fff;
+    font-size: 1.1rem;
+    width: 100%;
+    height: 20%;
+}
+  
+textarea {
+    height: 150px;
+}
+  
+button[type="submit"] {
+    background-color: #ff4b2b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1.2rem  
+}
+  
+button[type="submit"]:hover {
+    background-color: #a03a0e;
+}
+  
+#rightForm {
+    flex-basis: 40%;
+    width: 500%;
+    color: black;
+}
+  
+li {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+  
+hr {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin-bottom: 20px;
+}
