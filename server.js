@@ -1,6 +1,5 @@
 const express = require('express');
 const app = express();
-const port = 3000;
 const { JSDOM } = require("jsdom");
 
 app.use(express.static(__dirname));
@@ -9,10 +8,13 @@ app.listen(port, () => {
   console.log(`Server running on port ${port}`);
 });
 
-// const port = process.env.PORT || 3000;
-// app.listen(port, () => {
-//   console.log(`Server running on port ${port}`);
-// });
+const port = process.env.PORT || 3000; // Use the provided port by Heroku or default to 3000
+app.listen(port, "0.0.0.0", () => {
+  console.log(`Server running on port ${port}`);
+});
+
+
+// Functions for the website
 
 const dom = new JSDOM(`<!DOCTYPE html><body></body>`);
 global.document = dom.window.document;
