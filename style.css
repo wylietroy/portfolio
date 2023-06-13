@@ -53,7 +53,7 @@ section {
   /* transition-property: outline-offset, outline-color, background-color; */
   transition-duration: 0.25s;
   margin-bottom: 10px;
-  padding-top: 6px;
+  padding-top: 5px;
 }
 
 .icon:hover {
