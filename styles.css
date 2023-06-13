@@ -1,0 +1,329 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    background-color: black;
+    padding-left: 100px;
+  }
+  
+  header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 20%;
+    border-left: 1px solid white;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    z-index: 999;
+  }
+  
+  nav {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    border-left: 1px solid white;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 0.5rem;
+  }
+  
+  section {
+    padding-top: 60px;
+  }
+  
+  .icon img {
+    display: inline;
+    width: 50px;
+    height: 50px;
+  }
+  
+  .icon {
+    border-radius: 50%;
+    outline: 2px solid #fff;
+    transition-duration: 0.25s;
+    margin-bottom: 10px;
+    padding-top: 5px;
+  }
+  
+  .icon:hover {
+    outline-offset: 4px;
+  }
+  
+  .icon i {
+    margin: auto;
+  }
+  
+  .icon:hover i {
+    animation: shake 0.25s;
+  }
+  
+  #about {
+    margin-top: 50px;
+    color: white;
+  }
+  
+  .abtitle {
+    font-size: 2.5rem;
+    margin: 60px;
+  }
+  
+  .abname {
+    font-size: 3rem;
+    margin-top: 10px;
+    font-style: oblique;
+    font-weight: 600;
+  }
+  
+  .abpara1,
+  .abpara2 {
+    font-size: 1.8rem;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    width: 40%;
+  }
+  
+  .projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  .projectRow {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 20px;
+  }
+  
+  .projectCard {
+    width: 400px;
+    background-color: #ffffff;
+    padding: 10px;
+    margin: 50px;
+    border-radius: 20px;
+  }
+  
+  .projectCard img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .skillCard {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-right: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 8px;
+    background-color: #ff4b2b;
+  }
+  
+  .titleCard1 {
+    align-items: center;
+    margin-left: 140px;
+  }
+  
+  .titleCard2 {
+    align-items: center;
+    margin-left: 140px;
+  }
+  
+  .titleCard3 {
+    align-items: center;
+    margin-left: 115px;
+  }
+  
+  .titleCard4 {
+    align-items: center;
+    margin-left: 70px;
+  }
+  
+  .siteCard {
+    display: inline-block;
+    padding: 6px 12px;
+    border: 1px solid white;
+    border-radius: 4px;
+    margin-left: 60px;
+    background-color: #ff5e00;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .siteCard:hover {
+    background-color: #b35400;
+  }
+  
+  .siteCard:focus {
+    outline: none;
+  }
+  
+  #contact {
+    color: rgb(0, 0, 0);
+    padding: 50px;
+  }
+  
+  .formContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 60%;
+    padding: 30px;
+    background-color: #f1f1f1;
+    border-radius: 20px;
+    margin-bottom: 100px;
+    margin-top: 10px;
+  }
+  
+  .form {
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  h4 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+  
+  input,
+  textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #fff;
+    font-size: 1.1rem;
+    width: 90%;
+    height: 20%;
+  }
+  
+  textarea {
+    height: 150px;
+  }
+  
+  button[type="submit"] {
+    background-color: #ff4b2b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #a03a0e;
+  }
+  
+  #rightForm {
+    flex-basis: 40%;
+    width: 500%;
+    color: black;
+  }
+  
+  li {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+  }
+  
+  hr {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin-bottom: 20px;
+  }
+  
+  /* Media Queries */
+  
+  @media only screen and (max-width: 767px) {
+    body {
+      padding-left: 10px;
+    }
+  
+    header {
+      position: static;
+      width: 100%;
+      height: auto;
+      border: none;
+      padding: 20px 0;
+      text-align: center;
+    }
+  
+    nav {
+      flex-direction: row;
+      height: auto;
+      border: none;
+      margin-top: 20px;
+      justify-content: center;
+    }
+  
+    nav a {
+      padding: 0.5rem;
+    }
+  
+    section {
+      padding-top: 20px;
+    }
+  
+    .abtitle {
+      margin: 30px;
+      font-size: 2rem;
+    }
+  
+    .abname {
+      font-size: 2.5rem;
+    }
+  
+    .abpara1,
+    .abpara2 {
+      font-size: 1.5rem;
+      width: 100%;
+    }
+  
+    .projectCard {
+      width: 100%;
+      margin: 20px 0;
+    }
+  
+    .titleCard1,
+    .titleCard2,
+    .titleCard3,
+    .titleCard4 {
+      margin-left: 0;
+      text-align: center;
+    }
+  
+    .siteCard {
+      margin-left: 0;
+      margin-top: 20px;
+      display: inline-block;
+    }
+  
+    .formContainer {
+      max-width: 100%;
+      margin-bottom: 50px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  
+    .form {
+      flex-basis: 100%;
+    }
+  
+    input,
+    textarea {
+      width: 100%;
+    }
+  }
+  
