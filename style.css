@@ -61,8 +61,8 @@ section {
   border-radius: 50%;
   outline: 2px solid #fff;
   transition-duration: 0.25s;
-  margin-bottom: 10px;
-  padding-top: 5px;
+  /* margin-bottom: 10px; */
+  /* padding-top: 5px; */
 }
 
 .icon:hover {
@@ -308,10 +308,9 @@ hr {
   header {
     position: static;
     height: auto;
-    width: 100%;
+    width: 90%;
     border-left: none;
-    padding: 10px;
-    margin: 0;
+    /* margin: 0; */
   }
   
   nav {
@@ -322,7 +321,7 @@ hr {
   
   nav a {
     display: block;
-    padding: 10px;
+    padding: 5px;
     text-align: center;
   }
 
@@ -332,15 +331,29 @@ hr {
     margin-left: 10px;
   }
 
+  .abtitle {
+    margin-left: 50px;
+    font-size: 20px;
+  }
+
+  .abname {
+    margin-left: 40px;
+    text-align: left;
+    text-decoration: none;
+  }
+
   .abtitle,
   .abname {
-    padding-left: 50px;
+    position: static;
   }
 
   .abpara1,
   .abpara2 {
-    padding-left: 10px;
+    padding-right: 10px;
+    padding-left: -10px;
     width: auto;
+    text-align: center;
+    margin-left: 15px;
   }
   
   .projects {
@@ -349,8 +362,9 @@ hr {
   }
   
   .projectCard {
-    width: 100%;
+    width: auto;
     margin: 20px 0;
+    margin-bottom: 60px;
   }
   
   .titleCard1 {
