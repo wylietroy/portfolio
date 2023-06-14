@@ -58,11 +58,12 @@ section {
 }
 
 .icon {
-  border-radius: 50%;
+  border-radius: 30%;
   outline: 2px solid #fff;
   transition-duration: 0.25s;
-  /* margin-bottom: 10px; */
-  /* padding-top: 5px; */
+  margin-bottom: 10px;
+  padding-top: 5px;
+  padding: auto;
 }
 
 .icon:hover {
